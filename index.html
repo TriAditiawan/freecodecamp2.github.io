@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>SMK Informatika CBI Survey Form</title>
+    <title>freecodecamp Survey Form</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" href="https://smkinformatikacbi.sch.id/images/kc.png" />
@@ -9,7 +9,7 @@
     <style>
       :root {
         --color-white: #f3f3f3;
-        --color-darkblue-alpha: rgba(0, 0, 0, 0.8);
+        --color-darkblue-alpha: rgba(0, 0, 0, 0.5);
         --color-green: #37af65;
       }
 
@@ -195,78 +195,81 @@
     <div class="container">
       <header class="header">
         <h1 id="title" class="text-center">SMK Informatika CBI Survey Form</h1>
-        <p id="description" class="description text-center">Thank you for taking the time to help us improve the platform</p>
+        <p id="description" class="description text-center">Terima kasih telah meluangkan waktu untuk membantu kami</p>
       </header>
       <form id="survey-form">
         <div class="form-group">
-          <label id="name-label" for="name">Name</label>
-          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="" />
+          <label id="name-label" for="name">Nama</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Masukan Nama" required="" />
         </div>
         <div class="form-group">
           <label id="email-label" for="email">Email</label>
-          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="" />
+          <input type="email" name="email" id="email" class="form-control" placeholder="Masukan Email" required="" />
         </div>
         <div class="form-group">
-          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
-          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+          <label id="number-label" for="number">Umur<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Masukan Umur" />
         </div>
         <div class="form-group">
-          <p>Which option best describes your current role?</p>
+          <p>Berapa lama kamu belajar di smkinformatikacbi.sch.id perhari</p>
           <select id="dropdown" name="role" class="form-control" required="">
-            <option disabled="" selected="" value="">Select current role</option>
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="learner">Full Time Learner</option>
-            <option value="preferNo">Prefer not to say</option>
-            <option value="other">Other</option>
+            <option value="1">< 1 Jam</option>
+            <option value="2">< 2 Jam</option>
+            <option value="3">< 3 Jam</option>
+            <option value="4">< 4 Jam</option>
+            <option value="5">> 4 Jam</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>Would you recommend freeCodeCamp to a friend?</p>
-          <label> <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="" />Definitely</label>
-          <label> <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
-
-          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
-        </div>
-
-        <div class="form-group">
-          <p>What is your favorite feature of freeCodeCamp?</p>
+          <p>Apa fitur favorit Kamu di smkinformatika.sch.id</p>
           <select id="most-like" name="mostLike" class="form-control" required="">
-            <option disabled="" selected="" value="">Select an option</option>
-            <option value="challenges">Challenges</option>
-            <option value="projects">Projects</option>
-            <option value="community">Community</option>
-            <option value="openSource">Open Source</option>
+            <option disabled="" selected="" value="">Pilih pada opsi</option>
+            <option value="1">Informasi siswa</option>
+            <option value="2">Berita</option>
+            <option value="3">Gallery Foto</option>
+            <option value="4">Tidak ada</option>
           </select>
         </div>
 
         <div class="form-group">
           <p>
-            What would you like to see improved?
-            <span class="clue">(Check all that apply)</span>
+            Apa pelajaran favorit mu?
+            <span class="clue">(Centang semua yang terkait)</span>
           </p>
 
-          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Front-end Projects</label>
-          <label> <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end Projects</label>
-          <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data Visualization</label>
-          <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Challenges</label>
-          <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />Open Source Community</label>
-          <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Gitter help rooms</label>
-          <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Videos</label>
-          <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />City Meetups</label>
-          <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />Wiki</label>
-          <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum</label>
-          <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional Courses</label>
+          <label><input name="prefer" value="1" type="checkbox" class="input-checkbox" />Matematika</label>
+          <label> <input name="prefer" value="2" type="checkbox" class="input-checkbox" />Pemrograman Berorientasi Objek </label>
+          <label><input name="prefer" value="3" type="checkbox" class="input-checkbox" />Produk Kreatif </label>
+          <label><input name="prefer" value="4" type="checkbox" class="input-checkbox" />Pemrograman Perangkat Bergerak </label>
+          <label><input name="prefer" value="5" type="checkbox" class="input-checkbox" />Desain Grafis Percetakan </label>
+          <label><input name="prefer" value="6" type="checkbox" class="input-checkbox" />Bahasa Indonesia </label>
+          <label><input name="prefer" value="7" type="checkbox" class="input-checkbox" />Kewirausahaan</label>
+          <label><input name="prefer" value="8" type="checkbox" class="input-checkbox" />Pemodelan Perangkat Lunak </label>
+          <label><input name="prefer" value="9" type="checkbox" class="input-checkbox" />Pendidikan Agama Dan Budi Pekerti </label>
+          <label><input name="prefer" value="10" type="checkbox" class="input-checkbox" />Pendidikan Jasmani, Olahraga Dan Kesehatan </label>
+          <label><input name="prefer" value="11" type="checkbox" class="input-checkbox" />Mulok Bahasa Sunda </label>
+          <label><input name="prefer" value="12" type="checkbox" class="input-checkbox" />Pemrograman Web </label>
+          <label><input name="prefer" value="13" type="checkbox" class="input-checkbox" />Bahasa Inggris </label>
+          <label><input name="prefer" value="14" type="checkbox" class="input-checkbox" />Basis Data </label>
+          <label><input name="prefer" value="15" type="checkbox" class="input-checkbox" />Animasi 2-dimensi Dan 3-dimensi </label>
+          <label><input name="prefer" value="14" type="checkbox" class="input-checkbox" />Pendidikan Pancasila Dan Kewarganegaraan </label>
         </div>
 
         <div class="form-group">
-          <p>Any comments or suggestions?</p>
-          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+          <p>Apa komentar kamu tentang pembelajaran online ?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Masukan jawaban di sini... "></textarea>
+        </div>
+        <div class="form-group">
+          <p>Apakah Kamu akan merekomendasikan SMK Informatika cbi ke teman?</p>
+          <label> <input name="user-recommend" value="1" type="radio" class="input-radio" checked="" />Pastinya</label>
+          <label> <input name="user-recommend" value="2" type="radio" class="input-radio" />Mungkin</label>
+
+          <label><input name="user-recommend" value="3" type="radio" class="input-radio" />Tidak yakin</label>
         </div>
 
         <div class="form-group">
-          <button type="submit" id="submit" class="submit-button">Submit</button>
+          <button type="submit" id="submit" class="submit-button">Kirim jawaban</button>
         </div>
       </form>
     </div>
